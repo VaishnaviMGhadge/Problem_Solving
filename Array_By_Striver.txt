@@ -1,0 +1,10 @@
+1. largest in the array
+2. second largest in the array
+3. second largest and second smallest in the array
+4. if array is sorted or not 
+5. find the unique elements in the array
+
+
+
+6. rotate an array to the left by one position.
+7. rotate element to the left by K position
