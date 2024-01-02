@@ -1,4 +1,4 @@
-arr=[1,2,3,4,5,6,7]
+arr=[1,2,3,4,5]
 k=3
 temp=arr[0:k]
 for i in range(k,len(arr)):
