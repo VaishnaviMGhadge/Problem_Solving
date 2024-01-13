@@ -1,0 +1,8 @@
+5 
+4 -stage
+1- unst
+
+commit-4-save
+push - 4-remote repo
+
+Vivek - 3remote repo
