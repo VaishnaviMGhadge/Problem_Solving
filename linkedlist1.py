@@ -15,92 +15,95 @@ class Node:
     def getnext(self):
         return self.next
     
-
-
+    
+    
 if __name__=="__main__":
     head=Node(3)
-    node1=Node(4)
     node2=Node(5)
     node3=Node(6)
-    newnode=Node(1)
-    newnode1=Node(7)
+    node4=Node(7)
 
-    head.setnext(node1)
-    node1.setnext(node2)
+
+    head.setnext(node2)
     node2.setnext(node3)
+    node3.setnext(node4)
 
-    def traversing(head):
+
+    def traversing():
         temp=head
         while(temp!=None):
             print(temp.getdata(),end='-->')
             temp=temp.getnext()
-    print('normal ordering is ')
-    traversing(head)
-    print("\n")
 
-   
+    #traversing()
 
-    def traverseRecursive(head):
+
+    def Recursion_Travelling(head):
         temp=head
         if(temp==None):
-            return
+            return 
+            
         else:
-            print(temp.getdata(),end='-->')
-            traverseRecursive(temp.getnext())
-    print("recursive ordering is :")       
-    traverseRecursive(head)
+            print(temp.getdata())
+            Recursion_Travelling(temp.getnext())
+    #Recursion_Travelling(head)
 
-    print("\n")
 
-    def lengthofLL(head):
+    def Length_Of_LL(head):
         temp=head
         c=0
         while(temp!=None):
             c+=1
             temp=temp.getnext()
-        print("the number of nodes in the linked list is ",c)
+        print(c)
     
-    lengthofLL(head)
+    #Length_Of_LL(head)
 
 
-    print("\n")
-
-    def lengthofLLRecursive(head):
+    def Length_Of_LL_Recursion(head):
         temp=head
         if(temp==None):
             return 0
         else:
-            return 1+lengthofLLRecursive(temp.getnext())
-
-    print("length of the linked list using recursion is ",lengthofLLRecursive(head))
+            return 1+Length_Of_LL_Recursion(temp.getnext())
+        
+    #print(Length_Of_LL_Recursion(head))
 
 
     def InsertionAtBeginning(head):
-        
+        newnode=Node(8)
         newnode.setnext(head)
         head=newnode
-        traversing(head)
-        #return head
-    InsertionAtBeginning(head)
+        temp=head
+        while(temp!=None):
+            print(temp.getdata())
+            temp=temp.getnext()
+    
+    #InsertionAtBeginning(head)
 
 
     def InsertionAtEnd(head):
+        newnode=Node(23)
         temp=head
-        while(temp!=None):
+        if(temp==None):
             #print(temp.getdata())
+            
+            temp.setnext(newnode)
+        else:
             temp=temp.getnext()
-        temp.setnext(newnode1)
-        traversing()
-    
-    print(InsertionAtEnd(head))
+        temp1=head
+        while(temp1!=None):
+            print(temp1.getdata())
+            temp1=temp1.getnext()
+    InsertionAtEnd(head)
+
+
         
+
+            
+
+
+
     
-
-
-    
-
-
-
-
     
 

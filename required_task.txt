@@ -1,3 +1,0 @@
-download the git repositary 
-paste all the prgs from the VS to folder 
-and last push it 

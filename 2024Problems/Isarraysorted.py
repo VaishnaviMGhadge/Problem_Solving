@@ -1,0 +1,2 @@
+def issorted(arr):
+    
