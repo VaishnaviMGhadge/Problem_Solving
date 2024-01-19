@@ -1,0 +1,19 @@
+arr=[45,67,2,1,9,0]
+low=0
+high=len(arr)-1
+f=False
+while(low<=high):
+    mid=low+(high-low)//2
+    if(arr[mid]==2):
+        f=True
+        break
+    elif(arr[mid]<9):
+        low=mid+1
+        f=False
+    else:
+        high=mid-1
+        f=False
+if(f==True):
+    print(mid)
+else:
+    print("no found")
