@@ -11,10 +11,10 @@ def freq_counter(num):
 
 if __name__=="__main__":
     size=int(input("enter size of an array"))
-    l=[]
+    l1=[]
     for i in range((size)):
         ele=int(input('enter the element'))
-        l.append(ele)
+        l1.append(ele)
 
     query=int(input("how many query you want to check??"))
     while(query!=0):
